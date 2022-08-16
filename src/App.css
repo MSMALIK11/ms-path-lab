@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* font-family: 'Jost', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Sail', cursive; */
+
+body {
+  height: 100vh;
+}
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+.link {
+  list-style-type: none;
+  color: inherit;
+  text-decoration: none;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.home-container {
+  /* background-image:url(./images/bg1.png) ; */
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  overflow: hidden;
+}
+/* .home-container::before{
+width: 100%;
+height: 100%;
+background-color: rgba(0,0,0,0.5);
+position: absolute;
+content: '';
+} */
+
+/* header design */
+header {
+  background-color: #111;
+  color: #fff;
+  height: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+header ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  justify-content: center;
+  height: 100%;
+}
+header ul li {
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  cursor: pointer;
+
+  padding: 5px 10px;
+
+  border-radius: 5px;
+  transition: 0.4s;
+}
+header ul li:hover {
+  background-color: #fff;
+  color: #111;
+}
+/* end header design */
+
+/* banner design start */
+.banner-wraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.banner-heading {
+  font-family: "jost";
+  color: #111;
+  letter-spacing: 1.5px;
+  font-size: 40px;
+  font-weight: 600;
+  border-left: 5px solid indigo;
+  padding-left: 10px;
+}
+.banner-subheading {
+  font-family: "Sail", cursive;
+  color: #111;
+  letter-spacing: 1.5px;
+  text-indent: 150px;
+  font-size: 30px;
+  margin-left: 80px;
+  font-weight: 400;
+}
+
+/* banner design end */
+
+/* report design */
+.report-wraper {
+  width: 100%;
+  height: 100vh;
+  padding: 0px 20px;
+}
+
+.report-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+
+  margin: 15px 0;
+  align-items: center;
+}
+.report-container .r-label {
+  width: 200px;
+}
+
+.input1 {
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid indigo;
+  outline: none;
+}
+select {
+  min-width: 110px;
+}
+.line {
+  border-left: 2px solid indigo;
+}
+
+/* end report desing */
+
+/* modal design */
+.modal-wraper {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 450px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  display: none;
+}
+
+.modal-wraper.show {
+  display: block;
+}
+.modal-wraper .modal-header {
+  background-color: #222;
+  color: #fff;
+  padding: 5px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.close {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+  cursor: pointer;
+}
+.modal-wraper .modal-body {
+  padding: 5px 10px;
+}
+
+.btn {
+  padding: 5px 10px;
+  background-color: indigo;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.shadow-sm {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sample-list {
+  padding: 10px 20px;
+  height: 50vh;
+  overflow-y: scroll;
+  margin-top: 10px;
+}
+ul li {
+  border-bottom: 2px solid indigo;
+  border-left: 2px solid indigo;
+
+  margin: 5px 0;
+  font-family: "Jost", sans-serif;
+  padding: 4px;
+  transition: 0.4s;
+  letter-spacing: 0.6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+ul li:hover {
+  background-color: indigo;
+  color: #fff;
+}
+
+.icon {
+  font-size: 20px;
+  background-color: indigo;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* end modal design */
+
+/* table design */
+.result {
+  height: 42vh;
+
+  border: 6px solid indigo;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+table {
+  border-collapse: collapse;
+
+  width: 100%;
+display: block;
+height: 35vh;
+overflow-y:scroll ;
+ overflow-x:hidden ;
+
+
+}
+table thead{
+  position: sticky;
+  top: 0;
+}
+
+
+
+
+.result-box-table tbody tr input {
+  margin-right: 15px;
+}
+.table-result-box tbody th td {
+  margin: 0;
+  padding: 5px 10px;
+}
+
+table thead {
+  background-color: indigo;
+  color: #fff;
+  padding: 2px 0;
+  margin: 0;
+}
+
+table tr th,td {
+  margin: 0;
+  
+}
+
+.inputCode {
+  padding: 2px 10px;
+}
+.inputVal {
+  padding: 4px 5px;
+  text-transform: uppercase;
+}
+::placeholder {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/* end table design */
+
+/*  Slim Scrolbar. */
+.sample-list::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.sample-list::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.sample-list::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.sample-list::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* table  scrollbar */
+table::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+table::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+table::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  /* background: rgba(255, 255, 255, 0.3); */
+  background-color:indigo;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+table::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 255, 255, 0.3);
+}
